@@ -2,14 +2,14 @@ import React, { Component } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../css/Navbar.css";
 import { Container, Navbar, Nav } from "react-bootstrap";
-import logo from "../images/logo.jpg";
+import logo from "../images/logo.png";
 import { Phone, Instagram, Facebook } from "react-bootstrap-icons";
 
 export default class NavbarMenu extends Component {
   render() {
     return (
       <div id="home" className="pt-5 mr-20px">
-        <Navbar bg="black" expand="md" className="navbar fixed-top">
+        <Navbar bg="#Fdfcfa" expand="md" className="navbar fixed-top">
           <Container>
             <Navbar.Brand href="#home">
               <img
@@ -29,8 +29,8 @@ export default class NavbarMenu extends Component {
                 navbarScroll
               >
                 <Nav.Link href="#home">HOME</Nav.Link>
-                <Nav.Link href="#skills">ABOUT</Nav.Link>
-                <Nav.Link href="#skills">SERVICES</Nav.Link>
+                <Nav.Link href="#about">ABOUT</Nav.Link>
+                <Nav.Link href="#services">SERVICES</Nav.Link>
                 <Nav.Link href="#projects">PROJECTS</Nav.Link>
                 <Nav.Link href="#contact">CONTACT</Nav.Link>
 
@@ -85,7 +85,7 @@ export default class NavbarMenu extends Component {
                       }}
                     >
                       <li>
-                        <Phone color="white" size={20} />
+                        <Phone color="black" size={20} />
                       </li>
                     </a>
                   </h5>
