@@ -13,7 +13,7 @@ export default class NavbarMenu extends Component {
           <Container>
             <Navbar.Brand href="#home">
               <img
-                width="100px"
+                width="300px"
                 height="auto"
                 className="img-responsive"
                 src={logo}
@@ -28,11 +28,11 @@ export default class NavbarMenu extends Component {
                 style={{ width: "100%", height: "50%", color: "white" }}
                 navbarScroll
               >
-                <Nav.Link href="#home">HOME</Nav.Link>
-                <Nav.Link href="#about">ABOUT</Nav.Link>
-                <Nav.Link href="#services">SERVICES</Nav.Link>
-                <Nav.Link href="#projects">PROJECTS</Nav.Link>
-                <Nav.Link href="#contact">CONTACT</Nav.Link>
+                <Nav.Link href="/home">HOME</Nav.Link>
+                <Nav.Link href="/about">ABOUT</Nav.Link>
+                <Nav.Link href="/services">SERVICES</Nav.Link>
+                <Nav.Link href="/projects">PROJECTS</Nav.Link>
+                <Nav.Link href="/contact">CONTACT</Nav.Link>
 
                 <ul id="cssnav" className="navright"></ul>
 
