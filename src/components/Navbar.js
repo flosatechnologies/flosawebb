@@ -45,7 +45,8 @@ export default class NavbarMenu extends Component {
                       style={{ color: "#007785", textDecoration: "none" }}
                     >
                       <li>
-                        <Facebook id="faceb"
+                        <Facebook
+                          id="faceb"
                           color="blue"
                           size={20}
                           paddingTop={5}
@@ -63,7 +64,8 @@ export default class NavbarMenu extends Component {
                       style={{ color: "#E1306C", textDecoration: "none" }}
                     >
                       <li>
-                        <Instagram id="inst"
+                        <Instagram
+                          id="inst"
                           color="#F56040"
                           size={20}
                           paddingTop={5}
@@ -85,7 +87,12 @@ export default class NavbarMenu extends Component {
                       }}
                     >
                       <li>
-                        <Telephone id="tel" title="call us" color="purple" size={20} />
+                        <Telephone
+                          id="tel"
+                          title="call us"
+                          color="purple"
+                          size={20}
+                        />
                       </li>
                     </a>
                   </h5>
