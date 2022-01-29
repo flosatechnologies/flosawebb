@@ -1,0 +1,16 @@
+.footerMainContainer {
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.aboutText-footer {
+  text-align: justify;
+  line-height: 1.4;
+  color: #47a2fc;
+}
+
+.copyrightTextContainer {
+}
+
+.copyrightTextMainContainer {
+  background-color: rgba(0, 0, 0);
+}

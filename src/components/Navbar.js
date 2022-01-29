@@ -9,7 +9,7 @@ export default class NavbarMenu extends Component {
   render() {
     return (
       <div id="home" className="pt-5 mr-20px">
-        <Navbar bg="#Fdfcfa" expand="md" className="navbar fixed-top">
+        <Navbar bg="#Fdfcfa" expand="md" className="navbar sticky-top">
           <Container>
             <Navbar.Brand href="#home">
               <img
