@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Roboto:wght@100&display=swap');
+.des-container {
+    display: flex;
+    background-color: #000;
+    margin-top:50px;
+    height: 43vh;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.img{
+    width: 100vw;
+}
+
+#img-logo{
+    border-radius: 50%;
+    padding-top: 20px;
+}
+
+p{
+    color: #47A2FC;
+    font-size: 25px;
+    font-family: 'Open Sans', sans-serif;
+    text-align: justify;
+    padding-left: 15px;
+    padding-top: 10px;
+}
