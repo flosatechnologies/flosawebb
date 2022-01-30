@@ -10,6 +10,7 @@ class FLOSA extends Component {
         <Row>
           <Col>
             <img
+              id="flosa-logo"
               sizes="(min-width: 36em) 50vw, 50vw, 50vh"
               src={Logo}
               alt="profile"
@@ -20,16 +21,20 @@ class FLOSA extends Component {
 
           <Col id="history-text">
             
-              It has always been the common dream to see digital solutions
+             <p> It has always been the common dream to see digital solutions
               solving problems for businesses, especially the SMEs, schools and
               other institutions in the immediate environment and the nation at
-              large. Having gone through an intensive 18 months training as
+              large.
+              </p>
+              <p>
+              Having gone through an intensive 18 months training as
               Software Developers this common dream became even more pressing
               that it resulted in the conception and eventually the birth of
               FLOSA Technologies. FLOSA Technologies has since then provided
               digital solutions.
-        
+              </p>
           </Col>
+          
         </Row>
       </Container>
     );
