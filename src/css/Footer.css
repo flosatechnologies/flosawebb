@@ -1,7 +1,9 @@
 .footerMainContainer {
-  background-color: rgba(0, 0, 0, 0.9);
 }
-
+.footerTopSectionContainer {
+  background-color: rgba(0, 0, 0, 0.95);
+  padding-top: 1%;
+}
 .aboutText-footer {
   text-align: justify;
   line-height: 1.4;
@@ -9,8 +11,61 @@
 }
 
 .copyrightTextContainer {
+  background-color: rgba(0, 0, 0);
+  height: fit-content;
+  padding: 0px;
 }
 
-.copyrightTextMainContainer {
-  background-color: rgba(0, 0, 0);
+.copyrightText {
+  color: #fff;
+  text-align: center;
+  padding: 0.7%;
+  margin-bottom: 0px;
+  font-weight: lighter;
+}
+
+.footerHeaderText {
+  color: #47a2fc;
+  font-size: 1.6em;
+  font-weight: 600;
+  letter-spacing: 2pt;
+}
+
+.quickLinksListContainer {
+  list-style: none;
+  text-align: left;
+  margin-left: 12%;
+}
+.menuLink-footer {
+  text-decoration: none;
+}
+
+.telOneLink,
+.telTwoLink,
+.whatsappLink,
+.emailLink {
+  text-decoration: none;
+}
+.telOneLinkContainer,
+.telTwoLinkContainer,
+.whatsappLinkContainer,
+.emailLinkContainer {
+}
+.contactLinkListContainer {
+  text-align: left;
+  margin-left: 22%;
+}
+
+.facebookIcon-footer,
+.instagramIcon-footer {
+  font-size: 170%;
+  padding: 5%;
+  margin-right: 3%;
+}
+
+.socialMediaLinkMainContainer-footer {
+  display: flex;
+  flex-direction: row;
+  padding-left: 30%;
+  align-items: center;
 }
