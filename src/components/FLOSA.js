@@ -13,7 +13,7 @@ class FLOSA extends Component {
               sizes="(min-width: 36em) 50vw, 50vw, 50vh"
               src={Logo}
               alt="profile"
-              width="80%"
+              width="70%"
               style={{borderRadius: "100%", marginTop: "20px", marginBottom: "20px"}}
             />
           </Col>
