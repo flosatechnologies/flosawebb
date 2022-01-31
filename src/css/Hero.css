@@ -18,3 +18,9 @@ p {
   text-align: right;
   color: #ffffff;
 }
+.background {
+  background-image: radial-gradient(
+    rgba(71, 161, 252, 0.79),
+    rgba(12, 44, 80, 0.81)
+  );
+}

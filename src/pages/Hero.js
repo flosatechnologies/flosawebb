@@ -5,7 +5,7 @@ import "../css/Hero.css";
 
 const Hero = () => {
   return (
-    <section className="bg-primary text-light text-center p-5 text-sm-start hero">
+    <section className="bg-primary text-light text-center p-5 text-sm-start hero background">
       <Container>
         <div className="d-sm-flex align-items-center justify-content-between">
           <div className="my-4">
