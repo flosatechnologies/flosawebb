@@ -3,7 +3,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "../css/Navbar.css";
 import { Container, Navbar, Nav } from "react-bootstrap";
 import logo from "../images/logo.png";
-import { Phone, Instagram, Facebook } from "react-bootstrap-icons";
+import { Telephone, Instagram, Facebook } from "react-bootstrap-icons";
 
 export default class NavbarMenu extends Component {
   render() {
@@ -11,10 +11,12 @@ export default class NavbarMenu extends Component {
       <div id="home" className="pt-5 mr-20px">
         <Navbar bg="#Fdfcfa" expand="md" className="navbar sticky-top">
           <Container>
-            <Navbar.Brand href="#home">
+            <Navbar.Brand id="navb" href="#home">
               <img
+
                 width="300px"
                 height="auto"
+
                 className="img-responsive"
                 src={logo}
                 alt="logo"
@@ -45,7 +47,7 @@ export default class NavbarMenu extends Component {
                       style={{ color: "#007785", textDecoration: "none" }}
                     >
                       <li>
-                        <Facebook
+                        <Facebook id="faceb"
                           color="blue"
                           size={20}
                           paddingTop={5}
@@ -63,7 +65,7 @@ export default class NavbarMenu extends Component {
                       style={{ color: "#E1306C", textDecoration: "none" }}
                     >
                       <li>
-                        <Instagram
+                        <Instagram id="inst"
                           color="#F56040"
                           size={20}
                           paddingTop={5}
@@ -85,7 +87,7 @@ export default class NavbarMenu extends Component {
                       }}
                     >
                       <li>
-                        <Phone color="black" size={20} />
+                        <Telephone id="tel" title="call us" color="purple" size={20} />
                       </li>
                     </a>
                   </h5>

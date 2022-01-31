@@ -1,3 +1,4 @@
+
 import "./App.css";
 import NavbarMenu from "./components/Navbar";
 import Footer from "./components/Footer";
@@ -9,6 +10,7 @@ function App() {
       <NavbarMenu />
       <Footer />
     </Container>
+
   );
 }
 
