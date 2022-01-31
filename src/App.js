@@ -1,13 +1,16 @@
-import './App.css';
-import NavbarMenu from './components/Navbar';
-import About from './pages/About';
+
+import "./App.css";
+import NavbarMenu from "./components/Navbar";
+import Footer from "./components/Footer";
+import { Container } from "react-bootstrap";
 
 function App() {
   return (
-    <div className="App">
-     <NavbarMenu/>
-     <About/>
-    </div>
+    <Container fluid={true} className="App">
+      <NavbarMenu />
+      <Footer />
+    </Container>
+
   );
 }
 
