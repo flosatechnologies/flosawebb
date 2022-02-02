@@ -11,9 +11,9 @@ export default class NavbarMenu extends Component {
       <div id="home" className="pt-5 mr-20px">
         <Navbar bg="#Fdfcfa" expand="md" className="navbar fixed-top">
           <Container>
-            <Navbar.Brand href="#home">
+            <Navbar.Brand id="navb" href="#home">
               <img
-                width="300px"
+                width="200px"
                 height="55px"
                 className="img-responsive"
                 src={logo}
