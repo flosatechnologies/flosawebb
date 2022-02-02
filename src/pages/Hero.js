@@ -11,9 +11,9 @@ const Hero = () => {
           <div className="my-4">
             <h1 className="header">Intuitive Mobile Apps</h1>
 
-            <p className="lead">simple and strategically designed</p>
-            <p className="lead">UI to give you a lovely</p>
-            <p className="lead">user experience</p>
+            <p className="lead para">simple and strategically designed</p>
+            <p className="lead para">UI to give you a lovely</p>
+            <p className="lead para">user experience</p>
           </div>
           <img
             width="300px"
