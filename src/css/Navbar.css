@@ -1,7 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
 
 @media (max-width: 1199px) {
-
 }
 
 /*Navigation Bar styling*/
@@ -27,17 +26,15 @@
   background-color: #fdfcfa !important;
 }
 
-
- .fixed-top{
- background-color: #Fdfcfa !important;
- /* min-width:1000px; */
-width:100%;
+.fixed-top {
+  background-color: #fdfcfa !important;
+  /* min-width:1000px; */
+  width: 100%;
 }
 
-#navb{
+#navb {
   margin-left: -8px !important;
- padding-left: -8px !important;
-
+  padding-left: -8px !important;
 }
 
 .navright {
@@ -64,6 +61,7 @@ width:100%;
   flex-direction: row;
   margin-top: 4px;
   justify-content: right !important;
+  align-items: center;
   margin-right: 0;
 }
 li {

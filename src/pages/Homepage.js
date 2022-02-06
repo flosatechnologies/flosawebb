@@ -1,12 +1,14 @@
 import React, { Component } from "react";
-import { Container, Column, Row } from "react-bootstrap";
+import { Container } from "react-bootstrap";
+import "../css/Homepage.css";
+import Hero from "../components/Hero";
 
 class Homepage extends Component {
   render() {
     return (
-      <div>
-        <h3> this is the homepage</h3>
-      </div>
+      <Container fluid={true} className="homepageMainContainer">
+        <Hero />
+      </Container>
     );
   }
 }

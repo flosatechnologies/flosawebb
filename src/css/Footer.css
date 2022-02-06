@@ -1,4 +1,6 @@
 .footerMainContainer {
+  padding-left: 0;
+  padding-right: 0;
 }
 .footerTopSectionContainer {
   background-color: rgba(0, 0, 0, 0.95);

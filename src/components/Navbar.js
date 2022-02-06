@@ -8,15 +8,13 @@ import { Telephone, Instagram, Facebook } from "react-bootstrap-icons";
 export default class NavbarMenu extends Component {
   render() {
     return (
-      <div id="home" className="pt-5 mr-20px">
+      <div id="home" className=" mr-20px">
         <Navbar bg="#Fdfcfa" expand="md" className="navbar sticky-top">
           <Container>
             <Navbar.Brand id="navb" href="#home">
               <img
-
                 width="300px"
                 height="auto"
-
                 className="img-responsive"
                 src={logo}
                 alt="logo"
@@ -30,7 +28,7 @@ export default class NavbarMenu extends Component {
                 style={{ width: "100%", height: "50%", color: "white" }}
                 navbarScroll
               >
-                <Nav.Link href="/home">HOME</Nav.Link>
+                <Nav.Link href="/">HOME</Nav.Link>
                 <Nav.Link href="/about">ABOUT</Nav.Link>
                 <Nav.Link href="/services">SERVICES</Nav.Link>
                 <Nav.Link href="/projects">PROJECTS</Nav.Link>
@@ -85,7 +83,6 @@ export default class NavbarMenu extends Component {
                       style={{
                         color: "white",
                         textDecoration: "none",
-                        paddingRight: "30px",
                       }}
                     >
                       <li>
