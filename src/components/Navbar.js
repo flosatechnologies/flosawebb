@@ -4,6 +4,7 @@ import "../css/Navbar.css";
 import { Container, Navbar, Nav } from "react-bootstrap";
 import logo from "../images/logo.png";
 import { Telephone, Instagram, Facebook } from "react-bootstrap-icons";
+import { Link } from "react-router-dom";
 
 export default class NavbarMenu extends Component {
   render() {
@@ -28,11 +29,21 @@ export default class NavbarMenu extends Component {
                 style={{ width: "100%", height: "50%", color: "white" }}
                 navbarScroll
               >
-                <Nav.Link href="/">HOME</Nav.Link>
-                <Nav.Link href="/about">ABOUT</Nav.Link>
-                <Nav.Link href="/services">SERVICES</Nav.Link>
-                <Nav.Link href="/projects">PROJECTS</Nav.Link>
-                <Nav.Link href="/contact">CONTACT</Nav.Link>
+                <Nav.Link as={Link} to="/">
+                  HOME
+                </Nav.Link>
+                <Nav.Link as={Link} to="/about">
+                  ABOUT
+                </Nav.Link>
+                <Nav.Link as={Link} to="/services">
+                  SERVICES
+                </Nav.Link>
+                <Nav.Link as={Link} to="/projects">
+                  PROJECTS
+                </Nav.Link>
+                <Nav.Link as={Link} to="/contact">
+                  CONTACT
+                </Nav.Link>
 
                 <ul id="cssnav" className="navright"></ul>
 

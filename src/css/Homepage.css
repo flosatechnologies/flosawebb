@@ -2,3 +2,120 @@
   padding-left: 0;
   padding-right: 0;
 }
+
+.mainHeadings-homepage {
+  font-size: 40px;
+  font-weight: 600;
+  color: #47a2fc;
+  text-align: center;
+}
+
+.theHubSubSection {
+  padding: 7% 0;
+  text-align: center;
+}
+
+.theHubDescription {
+  font-size: 25px;
+  line-height: 1.2;
+}
+
+.mobileIcon,
+.webAppsIcon,
+.softwareEngIcon {
+  font-size: 45px;
+  margin-top: 3%;
+}
+
+#ourServiceHeading {
+  margin-bottom: 3%;
+}
+
+.serviceMainBox {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.serviceSubBox {
+  width: 94%;
+  background-color: #c4c4c4;
+  padding: 4%;
+}
+
+.serviceDescription {
+  font-size: 20px;
+  line-height: 1.2;
+}
+
+.serviceHeading {
+  padding-bottom: 0;
+  margin-bottom: 0;
+  margin-top: 3%;
+}
+
+.servicesMainSection {
+  margin-bottom: 6%;
+}
+
+.reachUsMainSection {
+  background-color: black;
+}
+
+.reachUsDescription {
+  text-align: center;
+  font-size: 28px;
+  color: white;
+}
+
+.reachUsSubSection {
+  margin: 2% 0;
+}
+
+.procjectsMainSection {
+  padding: 5% 0;
+}
+
+.wishesImage {
+  width: 38vw;
+}
+
+.projectsOminiContainer {
+  background-color: rgba(202, 202, 202, 0.46);
+}
+.projectSection {
+  margin: 5% 0;
+}
+
+.viewMoreButton {
+  width: fit-content;
+  background-color: transparent;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #47a2fc;
+  border-radius: 5px;
+}
+
+.viewMoreButtonContainer {
+  justify-content: center;
+}
+
+.quoteMainSection {
+  margin: 5% 0;
+}
+
+.quotesFormLabelText {
+  font-size: 21px;
+  color: white;
+  margin-bottom: 0;
+}
+
+.quotesFormsControl {
+  margin-bottom: 6%;
+}
+
+.requestQuoteSubContainer {
+  background-color: #0c2c51;
+  padding: 4% 3%;
+  border-radius: 8px;
+}
