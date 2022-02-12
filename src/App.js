@@ -1,13 +1,13 @@
+import "./App.css";
 import NavbarMenu from "./components/Navbar";
-import Hero from "./pages/Hero";
-import Services from "./pages/Services";
+import Footer from "./components/Footer";
+import { Container } from "react-bootstrap";
+import RouterComponent from "./components/Router";
 
 function App() {
   return (
-    <div className="app">
-      <NavbarMenu />
-      <Hero />
-      <Services />
+    <div className="App">
+      <RouterComponent />
     </div>
   );
 }
