@@ -9,12 +9,14 @@ export default class NavbarMenu extends Component {
   render() {
     return (
       <div id="home" className="pt-5 mr-20px">
-        <Navbar bg="#Fdfcfa" expand="md" className="navbar fixed-top">
+        <Navbar bg="#Fdfcfa" expand="md" className="navbar sticky-top">
           <Container>
             <Navbar.Brand id="navb" href="#home">
               <img
-                width="200px"
-                height="55px"
+
+                width="300px"
+                height="auto"
+
                 className="img-responsive"
                 src={logo}
                 alt="logo"
@@ -28,11 +30,11 @@ export default class NavbarMenu extends Component {
                 style={{ width: "100%", height: "50%", color: "white" }}
                 navbarScroll
               >
-                <Nav.Link href="#home">HOME</Nav.Link>
-                <Nav.Link href="#about">ABOUT</Nav.Link>
-                <Nav.Link href="#services">SERVICES</Nav.Link>
-                <Nav.Link href="#projects">PROJECTS</Nav.Link>
-                <Nav.Link href="#contact">CONTACT</Nav.Link>
+                <Nav.Link href="/home">HOME</Nav.Link>
+                <Nav.Link href="/about">ABOUT</Nav.Link>
+                <Nav.Link href="/services">SERVICES</Nav.Link>
+                <Nav.Link href="/projects">PROJECTS</Nav.Link>
+                <Nav.Link href="/contact">CONTACT</Nav.Link>
 
                 <ul id="cssnav" className="navright"></ul>
 
@@ -45,7 +47,8 @@ export default class NavbarMenu extends Component {
                       style={{ color: "#007785", textDecoration: "none" }}
                     >
                       <li>
-                        <Facebook id="faceb"
+                        <Facebook
+                          id="faceb"
                           color="blue"
                           size={20}
                           paddingTop={5}
@@ -63,7 +66,8 @@ export default class NavbarMenu extends Component {
                       style={{ color: "#E1306C", textDecoration: "none" }}
                     >
                       <li>
-                        <Instagram id="inst"
+                        <Instagram
+                          id="inst"
                           color="#F56040"
                           size={20}
                           paddingTop={5}
@@ -85,7 +89,12 @@ export default class NavbarMenu extends Component {
                       }}
                     >
                       <li>
-                        <Telephone id="tel" title="call us" color="purple" size={20} />
+                        <Telephone
+                          id="tel"
+                          title="call us"
+                          color="purple"
+                          size={20}
+                        />
                       </li>
                     </a>
                   </h5>
