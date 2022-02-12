@@ -35,6 +35,7 @@
   text-align: center;
   display: flex;
   justify-content: center;
+  margin: 3% 0;
 }
 
 .serviceSubBox {
@@ -72,12 +73,15 @@
   margin: 2% 0;
 }
 
+.phoneContactsMainContainer {
+}
+
 .procjectsMainSection {
   padding: 5% 0;
 }
 
 .wishesImage {
-  width: 38vw;
+  width: 40vw;
 }
 
 .projectsOminiContainer {
@@ -85,6 +89,11 @@
 }
 .projectSection {
   margin: 5% 0;
+  display: flex;
+  justify-content: center;
+}
+.projectImageContainer {
+  margin: 3% 0;
 }
 
 .viewMoreButton {
@@ -111,11 +120,49 @@
 }
 
 .quotesFormsControl {
-  margin-bottom: 6%;
+  margin-bottom: 7%;
 }
 
 .requestQuoteSubContainer {
   background-color: #0c2c51;
   padding: 4% 3%;
   border-radius: 8px;
+}
+
+.reachUsButton-phoneOne {
+  background-color: #d2042d;
+  border-style: none;
+  margin: 4% 0;
+}
+.reachUsButton-phoneTwo {
+  background-color: #1520a6;
+  border-style: none;
+  margin: 4% 0;
+}
+.reachUsButton-whatsapp {
+  background-color: #25d366;
+  border-style: none;
+  margin: 4% 0;
+}
+.reachUsButton-email {
+  margin: 4% 0;
+  background-color: #c4c4c4;
+  border-style: none;
+}
+
+.phone1Link-reachUs,
+.phone2Link-reachUs,
+.whatsappLink-reachUs,
+.emailLink-reachUs {
+  text-decoration: none;
+  color: black;
+}
+
+.icons-reachUs {
+  margin-right: 4px;
+}
+
+.phoneOneMainContainer-reachUs {
+  display: flex;
+  justify-content: center;
 }

@@ -8,6 +8,7 @@ import { HiCode, HiOutlineMail } from "react-icons/hi";
 import { ImPhone } from "react-icons/im";
 import { BsWhatsapp } from "react-icons/bs";
 import projOne from "../images/Screenshot1.png";
+import projTwo from "../images/Screenshot2.png";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 import InputGroup from "react-bootstrap/InputGroup";
@@ -17,6 +18,7 @@ class Homepage extends Component {
     return (
       <Container fluid={true} className="homepageMainContainer">
         <Hero />
+
         <Container>
           <Row className="theHubMainSection">
             <Col
@@ -46,7 +48,15 @@ class Homepage extends Component {
                 </h1>
               </Row>
               <Row>
-                <Col className="serviceMainBox">
+                <Col
+                  xxl={4}
+                  xl={4}
+                  lg={4}
+                  md={4}
+                  sm={12}
+                  xs={12}
+                  className="serviceMainBox"
+                >
                   <div className="serviceSubBox">
                     <div>
                       <FaMobileAlt className="mobileIcon" />
@@ -58,7 +68,15 @@ class Homepage extends Component {
                     </p>
                   </div>
                 </Col>
-                <Col className="serviceMainBox">
+                <Col
+                  xxl={4}
+                  xl={4}
+                  lg={4}
+                  md={4}
+                  sm={12}
+                  xs={12}
+                  className="serviceMainBox"
+                >
                   <div className="serviceSubBox">
                     <div>
                       <MdLaptop className="webAppsIcon" />
@@ -70,7 +88,15 @@ class Homepage extends Component {
                     </p>
                   </div>
                 </Col>
-                <Col className="serviceMainBox">
+                <Col
+                  xxl={4}
+                  xl={4}
+                  lg={4}
+                  md={4}
+                  sm={12}
+                  xs={12}
+                  className="serviceMainBox"
+                >
                   <div className="serviceSubBox">
                     <div>
                       <HiCode className="softwareEngIcon" />
@@ -95,41 +121,90 @@ class Homepage extends Component {
               </p>
             </Row>
             <Row>
-              <Col>
-                <div>
-                  <a href="tel:+233 546 835 848 " className="phone1Link">
-                    <ImPhone className="phoneReachUs" />
-                    +233 546 835 848
-                  </a>
-                </div>
-              </Col>
-              <Col>
-                <div>
-                  <a href="tel:+233 248 206 239 " className="phone2Link">
-                    <ImPhone className="phoneReachUs" />
-                    +233 248 206 239
-                  </a>
-                </div>
-              </Col>
-              <Col>
-                <div>
-                  <a
-                    className="whatsappLink"
-                    href="https://wa.me/+233262753277"
+              <Col
+                xxl={{ span: 10, offset: 1 }}
+                xl={{ span: 10, offset: 1 }}
+                lg={{ span: 10, offset: 1 }}
+                className="phoneContactsMainContainer"
+              >
+                <Row>
+                  <Col
+                    xxl={3}
+                    xl={3}
+                    lg={3}
+                    md={3}
+                    sm={12}
+                    xs={12}
+                    className="phoneOneMainContainer-reachUs"
                   >
-                    <FaWhatsapp /> +233 262 753 277
-                  </a>
-                </div>
-              </Col>
-              <Col>
-                <div>
-                  <a
-                    className="emailLink"
-                    href="mailto:info@flosatechnologies.com"
+                    <div>
+                      <Button className="reachUsButton-phoneOne">
+                        <a
+                          href="tel:+233 546 835 848 "
+                          className="phone1Link-reachUs"
+                        >
+                          <ImPhone className="icons-reachUs" />
+                          +233 546 835 848
+                        </a>
+                      </Button>
+                    </div>
+                  </Col>
+                  <Col
+                    xxl={3}
+                    xl={3}
+                    lg={3}
+                    md={3}
+                    sm={12}
+                    xs={12}
+                    className="phoneOneMainContainer-reachUs"
                   >
-                    <HiOutlineMail /> info@flosatechnologies.com
-                  </a>
-                </div>
+                    <div>
+                      <Button className="reachUsButton-phoneTwo">
+                        <a
+                          href="tel:+233 248 206 239 "
+                          className="phone2Link-reachUs"
+                        >
+                          <ImPhone className="icons-reachUs" />
+                          +233 248 206 239
+                        </a>
+                      </Button>
+                    </div>
+                  </Col>
+                  <Col
+                    xxl={3}
+                    xl={3}
+                    lg={3}
+                    md={3}
+                    sm={12}
+                    xs={12}
+                    className="phoneOneMainContainer-reachUs"
+                  >
+                    <div>
+                      <Button className="reachUsButton-whatsapp">
+                        <a
+                          className="whatsappLink-reachUs"
+                          href="https://wa.me/+233262753277"
+                        >
+                          <FaWhatsapp className="icons-reachUs" /> +233 262 753
+                          277
+                        </a>
+                      </Button>
+                    </div>
+                  </Col>
+                  <Col className="phoneOneMainContainer-reachUs">
+                    <div>
+                      <Button className="reachUsButton-email">
+                        <a
+                          className="emailLink-reachUs"
+                          href="mailto:info@flosatechnologies.com"
+                        >
+                          <HiOutlineMail className="icons-reachUs" />
+                          info@flosatechnologies.com
+                        </a>
+                      </Button>
+                    </div>
+                  </Col>
+                </Row>
               </Col>
             </Row>
           </Col>
@@ -144,16 +219,32 @@ class Homepage extends Component {
                   </Col>
                 </Row>
                 <Row className="projectSection">
-                  <Col>
+                  <Col
+                    xxl={6}
+                    xl={6}
+                    lg={6}
+                    md={6}
+                    sm={12}
+                    xs={12}
+                    className="projectImageContainer"
+                  >
                     <img
                       src={projOne}
                       alt="3wishesShot"
                       className="wishesImage"
                     />
                   </Col>
-                  <Col>
+                  <Col
+                    xxl={6}
+                    xl={6}
+                    lg={6}
+                    md={6}
+                    sm={12}
+                    xs={12}
+                    className="projectImageContainer"
+                  >
                     <img
-                      src={projOne}
+                      src={projTwo}
                       alt="wishesShot"
                       className="wishesImage"
                     />
