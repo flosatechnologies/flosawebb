@@ -1,0 +1,38 @@
+* {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+}
+
+.para-area {
+  flex: 2;
+}
+
+.Top-title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 47px;
+}
+
+.head-top {
+  font-weight: bold;
+  font-size: 45px;
+  line-height: 53px;
+  /* identical to box height */
+
+  text-align: center;
+
+  color: #47a2fc;
+}
+
+.text-para {
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 35px;
+
+  color: #000000;
+}
+
+.icon {
+  margin-right: 10px;
+}
