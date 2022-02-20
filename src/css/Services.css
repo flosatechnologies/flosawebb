@@ -36,3 +36,31 @@
 .icon {
   margin-right: 10px;
 }
+
+.servicesBanner {
+  background-image: url(../images/Service.jpg);
+
+  width: auto;
+  background-color: rgba(0, 0, 0, 0.1);
+  background-position: top;
+  padding: 0px;
+}
+
+.servicesBannerTextContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 75vh;
+}
+
+.ourServiceBannerTextHeading {
+  font-weight: 800;
+  font-size: 45px;
+  color: white;
+}
+.ourServiceBannerTextParagraph {
+  color: white;
+  font-size: 28px;
+  font-weight: bolder;
+}
