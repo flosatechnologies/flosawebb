@@ -1,14 +1,16 @@
 import "./App.css";
 import NavbarMenu from "./components/Navbar";
-import About from "./pages/About";
-import Contact from "./pages/Contact";
+import Footer from "./components/Footer";
+import { Container } from "react-bootstrap";
+import RouterComponent from "./components/Router";
+
 
 function App() {
   return (
     <div className="App">
-      <NavbarMenu />
 
-      <Contact />
+      <RouterComponent />
+
     </div>
   );
 }
