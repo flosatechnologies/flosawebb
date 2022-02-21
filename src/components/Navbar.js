@@ -3,15 +3,16 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "../css/Navbar.css";
 import { Container, Navbar, Nav } from "react-bootstrap";
 import logo from "../images/logo.png";
-import { Phone, Instagram, Facebook } from "react-bootstrap-icons";
+import { Telephone, Instagram, Facebook } from "react-bootstrap-icons";
+import { Link } from "react-router-dom";
 
 export default class NavbarMenu extends Component {
   render() {
     return (
-      <div id="home" className="pt-5 mr-20px">
+      <div id="home" className=" mr-20px">
         <Navbar bg="#Fdfcfa" expand="md" className="navbar sticky-top">
           <Container>
-            <Navbar.Brand href="#home">
+            <Navbar.Brand id="navb" href="#home">
               <img
                 width="300px"
                 height="auto"
@@ -28,11 +29,21 @@ export default class NavbarMenu extends Component {
                 style={{ width: "100%", height: "50%", color: "white" }}
                 navbarScroll
               >
-                <Nav.Link href="/home">HOME</Nav.Link>
-                <Nav.Link href="/about">ABOUT</Nav.Link>
-                <Nav.Link href="/services">SERVICES</Nav.Link>
-                <Nav.Link href="/projects">PROJECTS</Nav.Link>
-                <Nav.Link href="/contact">CONTACT</Nav.Link>
+                <Nav.Link as={Link} to="/">
+                  HOME
+                </Nav.Link>
+                <Nav.Link as={Link} to="/about">
+                  ABOUT
+                </Nav.Link>
+                <Nav.Link as={Link} to="/services">
+                  SERVICES
+                </Nav.Link>
+                <Nav.Link as={Link} to="/projects">
+                  PROJECTS
+                </Nav.Link>
+                <Nav.Link as={Link} to="/contact">
+                  CONTACT
+                </Nav.Link>
 
                 <ul id="cssnav" className="navright"></ul>
 
@@ -46,6 +57,7 @@ export default class NavbarMenu extends Component {
                     >
                       <li>
                         <Facebook
+                          id="faceb"
                           color="blue"
                           size={20}
                           paddingTop={5}
@@ -64,6 +76,7 @@ export default class NavbarMenu extends Component {
                     >
                       <li>
                         <Instagram
+                          id="inst"
                           color="#F56040"
                           size={20}
                           paddingTop={5}
@@ -81,11 +94,15 @@ export default class NavbarMenu extends Component {
                       style={{
                         color: "white",
                         textDecoration: "none",
-                        paddingRight: "30px",
                       }}
                     >
                       <li>
-                        <Phone color="black" size={20} />
+                        <Telephone
+                          id="tel"
+                          title="call us"
+                          color="purple"
+                          size={20}
+                        />
                       </li>
                     </a>
                   </h5>
