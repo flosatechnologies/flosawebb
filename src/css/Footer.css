@@ -1,4 +1,6 @@
 .footerMainContainer {
+  padding-left: 0;
+  padding-right: 0;
 }
 .footerTopSectionContainer {
   background-color: rgba(0, 0, 0, 0.95);
@@ -29,6 +31,7 @@
   font-size: 1.6em;
   font-weight: 600;
   letter-spacing: 2pt;
+  text-align: center;
 }
 
 .quickLinksListContainer {
@@ -68,4 +71,7 @@
   flex-direction: row;
   padding-left: 30%;
   align-items: center;
+}
+.footersections {
+  margin: 4% 0;
 }

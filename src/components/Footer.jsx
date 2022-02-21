@@ -16,9 +16,12 @@ class Footer extends Component {
             xxl={{ span: 10, offset: 1 }}
             xl={{ span: 10, offset: 1 }}
             lg={{ span: 10, offset: 1 }}
+            md={{ span: 10, offset: 1 }}
+            sm={{ span: 10, offset: 1 }}
+            xs={{ span: 10, offset: 1 }}
           >
             <Row>
-              <Col>
+              <Col className="footersections">
                 <div className="logoImageContainer-Footer">
                   <img src={logoImage} alt="logo-footer" height="50" />
                 </div>
@@ -28,7 +31,7 @@ class Footer extends Component {
                   <span> more</span>
                 </div>
               </Col>
-              <Col>
+              <Col className="footersections">
                 <h3 className="footerHeaderText">Quick Links</h3>
                 <ul className="quickLinksListContainer">
                   <li>
@@ -53,7 +56,7 @@ class Footer extends Component {
                   </li>
                 </ul>
               </Col>
-              <Col>
+              <Col className="footersections">
                 <h3 className="footerHeaderText">Contact us</h3>
                 <div className="contactLinkListContainer">
                   <div className="telOneLinkContainer-footer">
@@ -84,7 +87,7 @@ class Footer extends Component {
                   </div>
                 </div>
               </Col>
-              <Col>
+              <Col className="footersections">
                 <h3 className="footerHeaderText">Follow us</h3>
                 <div className="socialMediaLinkMainContainer-footer">
                   <div className="facebookLinkConainer-footer">
