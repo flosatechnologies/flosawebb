@@ -1,5 +1,6 @@
 import NavbarMenu from "./components/Navbar";
 import Hero from "./pages/Hero";
+import Projects from "./pages/Projects";
 import Services from "./pages/Services";
 
 function App() {
@@ -8,6 +9,7 @@ function App() {
       <NavbarMenu />
 
       <Services />
+      <Projects />
     </div>
   );
 }
