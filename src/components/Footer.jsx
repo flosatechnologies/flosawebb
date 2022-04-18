@@ -108,7 +108,7 @@ class Footer extends Component {
 
         <Row className="copyrightTextContainer">
           <p className="copyrightText">
-            copyright © 2021
+            copyright © 2022
             <span className="flosaTechText"> FLOSA Technologies</span>
           </p>
         </Row>
