@@ -6,7 +6,7 @@ const Project = ({ image, text, button }) => {
     <div className="d-flex justify-content-center p-4">
       <Row>
         <div className="col-md left">
-          <img width="98%" height="auto" src={image} />
+          <img width="98%" height="auto" src={image} alt="project_Image" />
         </div>
         <div className="col-md right">
           <h3 className="pt-3">{text}</h3>
