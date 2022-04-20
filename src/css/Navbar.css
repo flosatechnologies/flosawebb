@@ -3,6 +3,13 @@
 @media (max-width: 1199px) {
 }
 
+/* Homepage menu item styling*/
+.homepageMenu:active {
+  color: rgb(3, 40, 248);
+  border-radius: 8px;
+  height: 40px;
+}
+
 /*Navigation Bar styling*/
 .navbar-light .navbar-nav .nav-link {
   color: #000;

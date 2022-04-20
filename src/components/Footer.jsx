@@ -56,7 +56,15 @@ class Footer extends Component {
                   </li>
                 </ul>
               </Col>
-              <Col className="footersections">
+              <Col
+                xxl={5}
+                xl={5}
+                lg={5}
+                md={5}
+                sm={12}
+                xs={12}
+                className="footersections-ContactUs"
+              >
                 <h3 className="footerHeaderText">Contact us</h3>
                 <div className="contactLinkListContainer">
                   <div className="telOneLinkContainer-footer">

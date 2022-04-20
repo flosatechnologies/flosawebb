@@ -2,6 +2,9 @@
   padding-left: 0;
   padding-right: 0;
 }
+.footersections-ContactUs {
+  text-align: left;
+}
 .footerTopSectionContainer {
   background-color: rgba(0, 0, 0, 0.95);
   padding-top: 1%;
