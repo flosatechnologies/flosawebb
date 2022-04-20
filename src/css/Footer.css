@@ -2,9 +2,10 @@
   padding-left: 0;
   padding-right: 0;
 }
-.footersections-ContactUs {
-  text-align: left;
-}
+
+
+
+
 .footerTopSectionContainer {
   background-color: rgba(0, 0, 0, 0.95);
   padding-top: 1%;
@@ -34,13 +35,15 @@
   font-size: 1.6em;
   font-weight: 600;
   letter-spacing: 2pt;
-  text-align: center;
+  padding-bottom: 8px;
+  text-align: left;
+ 
 }
 
 .quickLinksListContainer {
   list-style: none;
   text-align: left;
-  margin-left: 12%;
+  /* margin-left: 5%; */
 }
 .menuLink-footer {
   text-decoration: none;
@@ -59,12 +62,12 @@
 }
 .contactLinkListContainer {
   text-align: left;
-  margin-left: 22%;
+  margin-left: 5%;
 }
 
 .facebookIcon-footer,
 .instagramIcon-footer {
-  font-size: 170%;
+  font-size: 180%;
   padding: 5%;
   margin-right: 3%;
 }
@@ -72,7 +75,7 @@
 .socialMediaLinkMainContainer-footer {
   display: flex;
   flex-direction: row;
-  padding-left: 30%;
+  padding-left: 5%;
   align-items: center;
 }
 .footersections {
