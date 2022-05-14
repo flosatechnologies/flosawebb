@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Roboto:wght@100&display=swap');
+
+#head-text{
+    font-family: 'Open Sans', sans-serif;
+    color: #47A2FC;
+}
+
+.flosaLogo{
+    border: 5px solid #47A2FC;
+}
+.aboutTextPara{
+    font-family: 'Open Sans', sans-serif;
+    color: #47A2FC;
+    font-size: 20px;
+    text-align: left;
+}
+.aboutTextContainer{
+    padding-top: 3%;
+}
+
+
+.firstSection-About{
+    background-color: #000000;
+}
+
+.techText{
+    font-family: sans-serif;
+    font-size: 20px;
+    color: #000000;
+
+}

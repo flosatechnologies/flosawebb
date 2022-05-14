@@ -14,7 +14,7 @@ export default class NavbarMenu extends Component {
           <Container>
             <Navbar.Brand id="navb" href="#home">
               <img
-                width="300px"
+                width="363px"
                 height="auto"
                 className="img-responsive"
                 src={logo}
@@ -29,7 +29,7 @@ export default class NavbarMenu extends Component {
                 style={{ width: "100%", height: "50%", color: "white" }}
                 navbarScroll
               >
-                <Nav.Link as={Link} to="/">
+                <Nav.Link as={Link} to="/" className="homepageMenu">
                   HOME
                 </Nav.Link>
                 <Nav.Link as={Link} to="/about">

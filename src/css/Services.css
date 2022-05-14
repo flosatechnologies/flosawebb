@@ -1,0 +1,66 @@
+* {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+}
+
+.para-area {
+  flex: 2;
+}
+
+.Top-title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 47px;
+}
+
+.head-top {
+  font-weight: bold;
+  font-size: 45px;
+  line-height: 53px;
+  /* identical to box height */
+
+  text-align: center;
+
+  color: #47a2fc;
+}
+
+.text-para {
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 35px;
+
+  color: #000000;
+}
+
+.icon {
+  margin-right: 10px;
+}
+
+.servicesBanner {
+  background-image: url(../images/Service.jpg);
+
+  width: auto;
+  background-color: rgba(0, 0, 0, 0.1);
+  background-position: top;
+  padding: 0px;
+}
+
+.servicesBannerTextContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 75vh;
+}
+
+.ourServiceBannerTextHeading {
+  font-weight: 800;
+  font-size: 45px;
+  color: white;
+}
+.ourServiceBannerTextParagraph {
+  color: white;
+  font-size: 28px;
+  font-weight: bolder;
+}

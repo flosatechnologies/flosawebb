@@ -21,7 +21,15 @@ class Footer extends Component {
             xs={{ span: 10, offset: 1 }}
           >
             <Row>
-              <Col className="footersections">
+              <Col
+                xxl={3}
+                xl={3}
+                lg={3}
+                md={3}
+                sm={12}
+                xs={12}
+                className="footersections"
+              >
                 <div className="logoImageContainer-Footer">
                   <img src={logoImage} alt="logo-footer" height="50" />
                 </div>
@@ -31,7 +39,15 @@ class Footer extends Component {
                   <span> more</span>
                 </div>
               </Col>
-              <Col className="footersections">
+              <Col
+                xxl={3}
+                xl={3}
+                lg={3}
+                md={3}
+                sm={12}
+                xs={12}
+                className="footersections"
+              >
                 <h3 className="footerHeaderText">Quick Links</h3>
                 <ul className="quickLinksListContainer">
                   <li>
@@ -56,7 +72,15 @@ class Footer extends Component {
                   </li>
                 </ul>
               </Col>
-              <Col className="footersections">
+              <Col
+                xxl={3}
+                xl={3}
+                lg={3}
+                md={3}
+                sm={12}
+                xs={12}
+                className="footersections"
+              >
                 <h3 className="footerHeaderText">Contact us</h3>
                 <div className="contactLinkListContainer">
                   <div className="telOneLinkContainer-footer">
@@ -87,7 +111,15 @@ class Footer extends Component {
                   </div>
                 </div>
               </Col>
-              <Col className="footersections">
+              <Col
+                xxl={3}
+                xl={3}
+                lg={3}
+                md={3}
+                sm={12}
+                xs={12}
+                className="footersections"
+              >
                 <h3 className="footerHeaderText">Follow us</h3>
                 <div className="socialMediaLinkMainContainer-footer">
                   <div className="facebookLinkConainer-footer">
