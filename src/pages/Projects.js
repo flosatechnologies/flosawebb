@@ -33,7 +33,7 @@ export default class FlipCard extends Component {
               </FrontSide>
               <BackSide style={{ backgroundColor: "#e05e43" }}>
               <h5 style={{color: "#000", textAlign: "center", textDecoration: "underline"}}>3wishes Hookah</h5>
-              <p style={{color: "#000", fontSize: "18px", textAlign: "justify", fontWeight: "300"}}>3wishes lounge is an E-comerce website. It features a payment integration that supports the various mobile money networks in ghana and card as well. there is a very intuitive UI and a management panel to assist managers in handling orders and delivery easily.{" "}
+              <p style={{color: "#000", fontSize: "18px", textAlign: "justify", fontWeight: "300"}}>3wishes lounge is an E-commerce website. It features a payment integration that supports the various mobile money networks in ghana and card as well. there is a very intuitive UI and a management panel to assist managers in handling orders and delivery easily.{" "}
               <a href="https://3wishesgh.com" target="_blank" rel="noreferrer">Visit Site</a> </p>
               </BackSide>
             </Flippy>
@@ -61,7 +61,7 @@ export default class FlipCard extends Component {
               </FrontSide>
               <BackSide style={{ backgroundColor: "#175852" }}>
               <h5 id="title">Blessdel Construction</h5>
-              <p id="text">Blesdel construction is a one page informational coporate website. It is very easy to navigate around and is well optimized in regards to search engines such as google.com, bing.com.{" "}
+              <p id="text">Blesdel construction is a one page informational corporate website. It is very easy to navigate around and is well optimized in regards to search engines such as google.com, bing.com.{" "}
               <a href="https://blessdelconstruction.com" target="_blank" rel="noreferrer">Visit Site</a> </p>
               </BackSide>
             </Flippy>
