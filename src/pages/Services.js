@@ -3,8 +3,11 @@ import { CheckCircleFill } from "react-bootstrap-icons";
 import Col from "react-bootstrap/Col";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 
 const Services = () => {
+  Aos.init();
   return (
     <Container fluid={true}>
       <Container fluid={true} className="servicesBanner">
@@ -24,7 +27,7 @@ const Services = () => {
           <h2 className="align-items-center text-center p-5 Top-title">
             FLOSA Technologies renders digital services as follows
           </h2>
-          <section className="p-3">
+          <section data-aos="zoom-in" className="p-3">
             <div className="container">
               <div className="row align-items-center  ">
                 <h2 className=" head-top">Mobile Application Development</h2>
@@ -63,7 +66,9 @@ const Services = () => {
             </div>
           </section>
 
-          <section className="p-3 ">
+          <section data-aos="flip-left"
+          data-aos-easing="ease-out-cubic"
+          data-aos-duration="1000" className="p-3 ">
             <div className="container">
               <div className="row align-items-center justify-content-between ">
                 <h2 className="head-top">Web Development</h2>
@@ -109,7 +114,8 @@ const Services = () => {
             </div>
           </section>
 
-          <section className="p-3">
+          <section data-aos="fade-up"
+          data-aos-anchor-placement="bottom-bottom" data-aos-duration="1500" className="p-3">
             <div className="container">
               <div className="row align-items-center justify-content-between ">
                 <h2 className="head-top">Software Engineering</h2>
@@ -148,7 +154,7 @@ const Services = () => {
             </div>
           </section>
 
-          <section className="py-3">
+          <section data-aos="fade-right" data-aos-duration="1500" className="py-3">
             <div className="container">
               <div className="align-items-center justify-content-center ">
                 <div className="   ">
