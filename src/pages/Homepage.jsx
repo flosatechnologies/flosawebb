@@ -12,9 +12,12 @@ import projTwo from "../images/blessdel.png";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 import InputGroup from "react-bootstrap/InputGroup";
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 
 class Homepage extends Component {
   render() {
+    Aos.init();
     return (
       <Container fluid={true} className="homepageMainContainer">
         <Hero />
@@ -57,7 +60,7 @@ class Homepage extends Component {
                   xs={12}
                   className="serviceMainBox"
                 >
-                  <div className="serviceSubBox">
+                  <div data-aos="fade-down-right" data-aos-duration="1500"className="serviceSubBox">
                     <div>
                       <FaMobileAlt className="mobileIcon" />
                     </div>
@@ -97,7 +100,7 @@ class Homepage extends Component {
                   xs={12}
                   className="serviceMainBox"
                 >
-                  <div className="serviceSubBox">
+                  <div data-aos="fade-down-left" data-aos-duration="2000" className="serviceSubBox">
                     <div>
                       <HiCode className="softwareEngIcon" />
                     </div>
@@ -158,7 +161,7 @@ class Homepage extends Component {
                     xs={12}
                     className="phoneOneMainContainer-reachUs"
                   >
-                    <div>
+                    <div data-aos="zoom-in-down" >
                       <Button className="reachUsButton-phoneTwo">
                         <a
                           href="tel:+233 248 206 239 "
@@ -179,7 +182,7 @@ class Homepage extends Component {
                     xs={12}
                     className="phoneOneMainContainer-reachUs"
                   >
-                    <div>
+                    <div data-aos="zoom-out-right" data-aos-duration="1200">
                       <Button className="reachUsButton-whatsapp">
                         <a
                           className="whatsappLink-reachUs"
