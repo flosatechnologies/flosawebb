@@ -140,7 +140,7 @@ class Homepage extends Component {
                     xs={12}
                     className="phoneOneMainContainer-reachUs"
                   >
-                    <div>
+                    <div data-aos="zoom-in" data-aos-duration="1500">
                       <Button className="reachUsButton-phoneOne">
                         <a
                           href="tel:+233 546 835 848 "
