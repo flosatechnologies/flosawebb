@@ -60,7 +60,7 @@ class Homepage extends Component {
                   xs={12}
                   className="serviceMainBox"
                 >
-                  <div data-aos="fade-down-right" data-aos-duration="1500"className="serviceSubBox">
+                  <div data-aos="fade-down-right" data-aos-duration="3000"className="serviceSubBox">
                     <div>
                       <FaMobileAlt className="mobileIcon" />
                     </div>
@@ -100,7 +100,7 @@ class Homepage extends Component {
                   xs={12}
                   className="serviceMainBox"
                 >
-                  <div data-aos="fade-down-left" data-aos-duration="2000" className="serviceSubBox">
+                  <div data-aos="fade-down-left" data-aos-duration="3000" className="serviceSubBox">
                     <div>
                       <HiCode className="softwareEngIcon" />
                     </div>
@@ -140,7 +140,7 @@ class Homepage extends Component {
                     xs={12}
                     className="phoneOneMainContainer-reachUs"
                   >
-                    <div data-aos="zoom-in" data-aos-duration="1500">
+                    <div data-aos="zoom-in" data-aos-duration="2000">
                       <Button className="reachUsButton-phoneOne">
                         <a
                           href="tel:+233 546 835 848 "
@@ -182,7 +182,7 @@ class Homepage extends Component {
                     xs={12}
                     className="phoneOneMainContainer-reachUs"
                   >
-                    <div data-aos="zoom-out-right" data-aos-duration="1200">
+                    <div data-aos="zoom-out-right" data-aos-duration="2000">
                       <Button className="reachUsButton-whatsapp">
                         <a
                           className="whatsappLink-reachUs"
