@@ -37,16 +37,16 @@ const Hero = () => {
             />
                 </h1>
 
-                <p data-aos="fade-right"
+                <p id="text-fade" data-aos="fade-right"
                 data-aos-offset="200"
-                data-aos-easing="ease-in-sine"  data-aos-duration="2000" className="lead">
+                data-aos-easing="ease-in-sine"  data-aos-duration="2000" className="lead" >
                   simple and strategically designed
                   <br />
                   UI to give you a lovely <br />
                   user experience
                 </p>
               </div>
-              <img data-aos="fade-left"
+              <img id="img-animate" data-aos="fade-left"
               data-aos-anchor="#example-anchor"
               data-aos-offset="500"
               data-aos-duration="1500"

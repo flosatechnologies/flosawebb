@@ -30,3 +30,30 @@ p.lead {
   );
 }
 
+#text-fade{
+  animation: rotate 3s linear 2;
+}
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+#img-animate{
+  animation-name: glow;
+    animation-duration: 0.35s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count:infinite;
+}
+@keyframes glow{
+  100% {
+      outline: none;
+      padding: 3px 0 3px 3px;
+      margin: 5px 1px 3px 0;
+      box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+  }
+}

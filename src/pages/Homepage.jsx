@@ -38,7 +38,7 @@ class Homepage extends Component {
               </h1>
               <p className="theHubDescription">
                 FLOSA Technologies puts your business at heart as such we
-                thorougly analyze your projects for the best of solutions so as
+                thoroughly analyze your projects for the best of solutions so as
                 to significantly improve your business
               </p>
             </Col>
