@@ -60,7 +60,7 @@ class Homepage extends Component {
                   xs={12}
                   className="serviceMainBox"
                 >
-                  <div data-aos="fade-down-right" data-aos-duration="3000"className="serviceSubBox">
+                  <div data-aos="fade-down-right" data-aos-duration="1000"className="serviceSubBox">
                     <div>
                       <FaMobileAlt className="mobileIcon" />
                     </div>
@@ -100,7 +100,7 @@ class Homepage extends Component {
                   xs={12}
                   className="serviceMainBox"
                 >
-                  <div data-aos="fade-down-left" data-aos-duration="3000" className="serviceSubBox">
+                  <div data-aos="fade-down-left" data-aos-duration="1000" className="serviceSubBox">
                     <div>
                       <HiCode className="softwareEngIcon" />
                     </div>
