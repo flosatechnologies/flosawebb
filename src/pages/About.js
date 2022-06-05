@@ -64,7 +64,7 @@ class About extends Component {
         </Row>
         <Container>
           <Row style={{ marginTop: "10px" }}>
-            <Col data-aos="fade-down-left" data-aos-duration="1000">
+            <Col >
               <h2 id="head-text">Languages</h2>
               <p id="tech-text" className="techText">
                 FLOSA Technologies has principal languages they work with and
@@ -94,7 +94,7 @@ class About extends Component {
                 id="tech-logo"
               />
             </Col>
-            <Col>
+            <Col >
               <h2 id="head-text">Frameworks</h2>
               <p id="tech-text" className="techText">
                 There are a number of Frameworks that FLOSA Technologies have
@@ -124,7 +124,7 @@ class About extends Component {
                 id="tech-logo"
               />
             </Col>
-            <Col data-aos="fade-left" data-aos-duration="1000">
+            <Col >
               <h2 id="head-text">Other Technologies</h2>
               <p id="tech-text" className="techText">
                 Other Technologies we use in developing our projects includes
