@@ -10,9 +10,13 @@ import Mongo from "../images/mongodb.png";
 import Node from "../images/nodejs.jpg";
 import Express from "../images/express-min.png";
 import ReactL from "../images/react-js.png";
+import Aos from 'aos';
+import 'aos/dist/aos.css';
+
 
 class About extends Component {
   render() {
+    Aos.init();
     return (
       <Container fluid={true}>
         <Row className="firstSection-About">
@@ -60,7 +64,7 @@ class About extends Component {
         </Row>
         <Container>
           <Row style={{ marginTop: "10px" }}>
-            <Col>
+            <Col >
               <h2 id="head-text">Languages</h2>
               <p id="tech-text" className="techText">
                 FLOSA Technologies has principal languages they work with and
@@ -90,7 +94,7 @@ class About extends Component {
                 id="tech-logo"
               />
             </Col>
-            <Col>
+            <Col >
               <h2 id="head-text">Frameworks</h2>
               <p id="tech-text" className="techText">
                 There are a number of Frameworks that FLOSA Technologies have
@@ -120,7 +124,7 @@ class About extends Component {
                 id="tech-logo"
               />
             </Col>
-            <Col>
+            <Col >
               <h2 id="head-text">Other Technologies</h2>
               <p id="tech-text" className="techText">
                 Other Technologies we use in developing our projects includes

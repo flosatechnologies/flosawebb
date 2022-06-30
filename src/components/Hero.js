@@ -2,8 +2,12 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import { Container, Col, Row } from "react-bootstrap";
 import hero from "../images/phoneMockUp.png";
 import "../css/Hero.css";
+import Aos from 'aos';
+import 'aos/dist/aos.css';
+import Typical from "react-typical";
 
 const Hero = () => {
+  Aos.init();
   return (
     <section className="bg-primary text-light text-center p-5 text-sm-start hero background">
       <Container fluid={true} className="heroMainContainer">
@@ -18,16 +22,34 @@ const Hero = () => {
           >
             <div className="d-sm-flex align-items-center justify-content-between">
               <div className="my-4">
-                <h1 className="header">Intuitive Mobile Apps</h1>
+                <h1 className="header">
+                <Typical
+              loop={Infinity}
+              wrapper="b"
+              steps={[
+                "Intuitive", 
+                5000,
+                "Mobile",
+                4000,
+                "Apps",
+                5000,
+              ]}
+            />
+                </h1>
 
-                <p className="lead">
+                <p id="text-fade" data-aos="fade-right"
+                data-aos-offset="200"
+                data-aos-easing="ease-in-sine"  data-aos-duration="2000" className="lead" >
                   simple and strategically designed
                   <br />
                   UI to give you a lovely <br />
                   user experience
                 </p>
               </div>
-              <img
+              <img id="img-animate" data-aos="fade-left"
+              data-aos-anchor="#example-anchor"
+              data-aos-offset="500"
+              data-aos-duration="1500"
                 width="300px"
                 height="55px"
                 className="img-fluid my-5 "
