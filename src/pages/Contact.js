@@ -68,7 +68,7 @@ import emailjs from 'emailjs-com';
                       }}
                       type="text"
                       placeholder="First Name"
-                      name="user_name"
+                      name="name"
                     />
 
                     <input
@@ -79,7 +79,7 @@ import emailjs from 'emailjs-com';
                       }}
                       type="text"
                       placeholder="Last Name"
-                      name="user_name"
+                      name="name"
                     />
                   </div>
                   <div
