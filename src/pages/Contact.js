@@ -1,12 +1,25 @@
-import React, { Component } from "react";
+import React, { useRef } from "react";
 import "../css/Contact.css";
 import contactImage from "../images/contact.jpg";
 import { Card, Row, Col, Container } from "react-bootstrap";
 import { Telephone } from "react-bootstrap-icons";
 import { FaWhatsapp, FaEnvelope } from "react-icons/fa";
+import emailjs from 'emailjs-com';
 
-class Contact extends Component {
-  render() {
+ const Contact = () => {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm('service_fp9k4mj', 'template_ix6fsps', form.current, 'R6b8YmYTKD8r4uK6O')
+      .then((result) => {
+          console.log(result.text);
+      }, (error) => {
+          console.log(error.text);
+      });
+  };
+    
     return (
       <Container
         fluid={true}
@@ -39,7 +52,7 @@ class Contact extends Component {
           >
             <Row style={{ paddingLeft: "4px", paddingRight: "10px" }}>
               <Col xs={12} sm={12} md={7} lg={7} xl={7} xxl={7}>
-                <form onSubmit={this.handleSubmit}>
+                <form ref={form} onSubmit={sendEmail}>
                   <div
                     style={{
                       display: "flex",
@@ -55,6 +68,7 @@ class Contact extends Component {
                       }}
                       type="text"
                       placeholder="First Name"
+                      name="user_name"
                     />
 
                     <input
@@ -65,6 +79,7 @@ class Contact extends Component {
                       }}
                       type="text"
                       placeholder="Last Name"
+                      name="user_name"
                     />
                   </div>
                   <div
@@ -75,12 +90,14 @@ class Contact extends Component {
                       style={{ marginRight: "10px", width: "50%" }}
                       type="text"
                       placeholder="Phone"
+                      name="user_phone"
                     />
 
                     <input
                       style={{ marginRight: "10px", width: "50%" }}
                       type="text"
                       placeholder="Email"
+                      name="user_email"
                     />
                   </div>
                   <div className="col-md">
@@ -88,6 +105,7 @@ class Contact extends Component {
                       style={{ width: "50%" }}
                       type="text"
                       placeholder="Message"
+                      name="message"
                     />
                   </div>
                   <div>
@@ -153,7 +171,7 @@ class Contact extends Component {
         </Row>
       </Container>
     );
-  }
+  
 }
-export default Contact;
 
+export default Contact;
