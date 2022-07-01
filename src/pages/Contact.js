@@ -1,9 +1,12 @@
 import React, { Component } from "react";
 import "../css/Contact.css";
 import contactImage from "../images/contact.jpg";
-import { Card, Row, Col, Container } from "react-bootstrap";
+import { Row, Col, Container } from "react-bootstrap";
 import { Telephone } from "react-bootstrap-icons";
 import { FaWhatsapp, FaEnvelope } from "react-icons/fa";
+import { BsFillTelephoneFill, BsFacebook } from "react-icons/bs";
+import { FaInstagram } from "react-icons/fa";
+import { HiOutlineMail } from "react-icons/hi";
 
 class Contact extends Component {
   render() {
@@ -37,7 +40,7 @@ class Contact extends Component {
             sm={{ span: 10, offset: 1 }}
             xs={{ span: 10, offset: 1 }}
           >
-            <Row style={{ paddingLeft: "4px", paddingRight: "10px" }}>
+            <Row className="contactInnerContainer">
               <Col xs={12} sm={12} md={7} lg={7} xl={7} xxl={7}>
                 <form onSubmit={this.handleSubmit}>
                   <div
@@ -96,7 +99,7 @@ class Contact extends Component {
                 </form>
               </Col>
               <Col xs={12} sm={12} md={5} lg={5} xl={5} xxl={5} style={{}}>
-                <h2>Contact Information</h2>
+                <h2 className="contactInfoText-contact">Contact Information</h2>
                 <div className="icons">
                   <h5>
                     <a>
@@ -111,7 +114,7 @@ class Contact extends Component {
                     </a>
                   </h5>
                   <h5>
-                    <a>
+                    <a href="tel: +233 546 835 848">
                       <Telephone
                         id="tele"
                         color="blue"
@@ -131,7 +134,7 @@ class Contact extends Component {
                         paddingTop={5}
                         marginRight={20}
                       />
-                      0546835848``
+                      0546835848
                     </a>
                   </h5>
                   <h5>
@@ -156,4 +159,3 @@ class Contact extends Component {
   }
 }
 export default Contact;
-
