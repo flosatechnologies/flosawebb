@@ -51,22 +51,22 @@ class Footer extends Component {
                 <h3 className="footerHeaderText">Quick Links</h3>
                 <ul className="quickLinksListContainer">
                   <li>
-                    <a className="menuLink-footer" href="">
+                    <a className="menuLink-footer" href="/">
                       Home
                     </a>
                   </li>
                   <li>
-                    <a className="menuLink-footer" href="">
+                    <a className="menuLink-footer" href="/about">
                       About
                     </a>
                   </li>
                   <li>
-                    <a className="menuLink-footer" href="">
+                    <a className="menuLink-footer" href="/services">
                       Services
                     </a>
                   </li>
                   <li>
-                    <a className="menuLink-footer" href="">
+                    <a className="menuLink-footer" href="projects">
                       Projects
                     </a>
                   </li>
@@ -123,12 +123,14 @@ class Footer extends Component {
                 <h3 className="footerHeaderText">Follow us</h3>
                 <div className="socialMediaLinkMainContainer-footer">
                   <div className="facebookLinkConainer-footer">
-                    <a href="#">
+                    <a href="https://www.facebook.com/search/top?q=flosa%20technologies" target="_blank"
+                    rel="noreferrer">
                       <BsFacebook className="facebookIcon-footer" />
                     </a>
                   </div>
                   <div className="instagramLinkContainer-footer">
-                    <a href="#">
+                    <a href="https://www.instagram.com/flosatech/"  target="_blank"
+                    rel="noreferrer">
                       <FaInstagram className="instagramIcon-footer" />
                     </a>
                   </div>
@@ -140,7 +142,7 @@ class Footer extends Component {
 
         <Row className="copyrightTextContainer">
           <p className="copyrightText">
-            copyright © 2021
+            copyright © 2022
             <span className="flosaTechText"> FLOSA Technologies</span>
           </p>
         </Row>

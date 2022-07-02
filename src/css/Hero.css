@@ -10,7 +10,7 @@
   font-weight: bold;
   font-size: 53px;
   line-height: 72px;
-
+  text-align: center;
   color: #000000;
 }
 
@@ -29,3 +29,17 @@ p.lead {
     rgba(12, 44, 80, 0.81)
   );
 }
+
+#text-fade{
+  animation: rotate 3s linear 2;
+}
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(359deg);
+  }
+}
+
