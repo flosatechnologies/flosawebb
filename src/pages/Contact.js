@@ -129,7 +129,7 @@ const Contact = () => {
               <h2 className="contactInfoText-contact">Contact Information</h2>
               <div className="icons">
                 <h5>
-                  <a>
+                  <a className="phoneContact1" href="tel: +233 546 835 848">
                     <Telephone
                       id="tele"
                       color="blue"
@@ -141,7 +141,7 @@ const Contact = () => {
                   </a>
                 </h5>
                 <h5>
-                  <a href="tel: +233 546 835 848">
+                  <a className="phoneContact2" href="tel: +233 248 206 239">
                     <Telephone
                       id="tele"
                       color="blue"
@@ -149,23 +149,29 @@ const Contact = () => {
                       paddingTop={5}
                       marginRight={20}
                     />
-                    0546835848
+                    0248206239
                   </a>
                 </h5>
                 <h5 style={{ paddingLeft: "5px" }}>
-                  <a>
+                  <a
+                    className=" phoneWhatsapp"
+                    href="https://wa.me/+233262753277"
+                  >
                     <FaWhatsapp
                       id="tele"
                       color="green"
-                      size={20}
+                      size={19}
                       paddingTop={5}
                       marginRight={20}
                     />
-                    0546835848
+                    0262753277
                   </a>
                 </h5>
                 <h5>
-                  <a>
+                  <a
+                    className="emailLinkContact"
+                    href="mailto:info@flosatechnologies.com"
+                  >
                     <FaEnvelope
                       id="tele"
                       color="lightblue"

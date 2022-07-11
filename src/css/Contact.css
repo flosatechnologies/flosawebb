@@ -60,3 +60,11 @@
   color: #47a2fc;
   text-align: center;
 }
+
+.phoneContact2,
+.phoneContact1,
+.emailLinkContact,
+.phoneWhatsapp {
+  color: black;
+  text-decoration: none;
+}
