@@ -74,9 +74,12 @@ const Contact = () => {
                 >
                   <input
                     style={{
-                      marginRight: "10px",
                       marginTop: "20px",
+                      marginRight: "15px",
                       width: "50%",
+                      fontFamily: "sans-serif",
+                      fontSize: "20px",
+                      color: "black",
                     }}
                     type="text"
                     placeholder="First Name"
@@ -85,9 +88,12 @@ const Contact = () => {
 
                   <input
                     style={{
-                      marginRight: "10px",
                       marginTop: "20px",
+                      marginLeft: "15px",
                       width: "50%",
+                      fontFamily: "sans-serif",
+                      fontSize: "20px",
+                      color: "black",
                     }}
                     type="text"
                     placeholder="Last Name"
@@ -96,17 +102,35 @@ const Contact = () => {
                 </div>
                 <div
                   className="col"
-                  style={{ display: "flex", marginBottom: "10px" }}
+                  style={{
+                    display: "flex",
+                    marginBottom: "10px",
+                    fontFamily: "sans-serif",
+                    fontSize: "20px",
+                    color: "black",
+                  }}
                 >
                   <input
-                    style={{ marginRight: "10px", width: "50%" }}
+                    style={{
+                      marginRight: "15px",
+                      width: "50%",
+                      fontFamily: "sans-serif",
+                      fontSize: "20px",
+                      color: "black",
+                    }}
                     type="text"
                     placeholder="Phone"
                     name="user_phone"
                   />
 
                   <input
-                    style={{ marginRight: "10px", width: "50%" }}
+                    style={{
+                      marginLeft: "15px",
+                      width: "50%",
+                      fontFamily: "sans-serif",
+                      fontSize: "20px",
+                      color: "black",
+                    }}
                     type="text"
                     placeholder="Email"
                     name="user_email"
@@ -114,10 +138,16 @@ const Contact = () => {
                 </div>
                 <div className="col-md">
                   <textarea
-                    style={{ width: "50%" }}
+                    style={{
+                      width: "100%",
+                      fontFamily: "sans-serif",
+                      fontSize: "20px",
+                      color: "black",
+                    }}
                     type="text"
                     placeholder="Message"
                     name="message"
+                    rows={7}
                   />
                 </div>
                 <div>
@@ -125,17 +155,27 @@ const Contact = () => {
                 </div>
               </form>
             </Col>
-            <Col xs={12} sm={12} md={5} lg={5} xl={5} xxl={5} style={{}}>
+            <Col
+              xs={12}
+              sm={12}
+              md={5}
+              lg={5}
+              xl={5}
+              xxl={5}
+              style={{ paddingLeft: "40px" }}
+            >
               <h2 className="contactInfoText-contact">Contact Information</h2>
               <div className="icons">
                 <h5>
                   <a className="phoneContact1" href="tel: +233 546 835 848">
                     <Telephone
                       id="tele"
-                      color="blue"
+                      color="rgb(71, 162, 252)"
                       size={20}
                       paddingTop={5}
-                      marginRight={20}
+                      style={{
+                        marginRight: "10px",
+                      }}
                     />
                     0546835848
                   </a>
@@ -144,10 +184,10 @@ const Contact = () => {
                   <a className="phoneContact2" href="tel: +233 248 206 239">
                     <Telephone
                       id="tele"
-                      color="blue"
+                      color="rgb(71, 162, 252)"
                       size={20}
                       paddingTop={5}
-                      marginRight={20}
+                      style={{ marginRight: "10px" }}
                     />
                     0248206239
                   </a>
@@ -159,10 +199,10 @@ const Contact = () => {
                   >
                     <FaWhatsapp
                       id="tele"
-                      color="green"
+                      color="rgb(71, 162, 252)"
                       size={19}
                       paddingTop={5}
-                      marginRight={20}
+                      style={{ marginRight: "10px" }}
                     />
                     0262753277
                   </a>
@@ -174,10 +214,10 @@ const Contact = () => {
                   >
                     <FaEnvelope
                       id="tele"
-                      color="lightblue"
+                      color="rgb(71, 162, 252)"
                       size={20}
                       paddingTop={5}
-                      marginLeft={30}
+                      style={{ marginRight: "10px" }}
                     />
                     info@flosatechnologies.com
                   </a>

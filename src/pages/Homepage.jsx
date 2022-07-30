@@ -173,6 +173,7 @@ class Homepage extends Component {
                       <Button className="reachUsButton-phoneTwo">
                         <a
                           href="tel:+233 248 206 239 "
+                          target="_blank"
                           className="phone2Link-reachUs"
                         >
                           <ImPhone className="icons-reachUs" />
@@ -194,6 +195,7 @@ class Homepage extends Component {
                       <Button className="reachUsButton-whatsapp">
                         <a
                           className="whatsappLink-reachUs"
+                          target="_blank"
                           href="https://wa.me/+233262753277"
                         >
                           <FaWhatsapp className="icons-reachUs" /> +233 262 753
@@ -262,7 +264,11 @@ class Homepage extends Component {
                   </Col>
                 </Row>
                 <Row className="viewMoreButtonContainer">
-                  <button className="viewMoreButton">view more</button>
+                  <button className="viewMoreButton">
+                    <a href="#" className="viewMoreButtonLink">
+                      view more
+                    </a>
+                  </button>
                 </Row>
               </Col>
             </Row>
