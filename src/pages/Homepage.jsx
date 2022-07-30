@@ -7,14 +7,18 @@ import { MdLaptop } from "react-icons/md";
 import { HiCode, HiOutlineMail } from "react-icons/hi";
 import { ImPhone } from "react-icons/im";
 import { BsWhatsapp } from "react-icons/bs";
-import projOne from "../images/Screenshot1.png";
-import projTwo from "../images/Screenshot2.png";
+import projOne from "../images/3wishes.png";
+import projTwo from "../images/blessdel.png";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 import InputGroup from "react-bootstrap/InputGroup";
+import Aos from "aos";
+import "aos/dist/aos.css";
+import { Link } from "react-router-dom";
 
 class Homepage extends Component {
   render() {
+    Aos.init();
     return (
       <Container fluid={true} className="homepageMainContainer">
         <Hero />
@@ -35,7 +39,7 @@ class Homepage extends Component {
               </h1>
               <p className="theHubDescription">
                 FLOSA Technologies puts your business at heart as such we
-                thorougly analyze your projects for the best of solutions so as
+                thoroughly analyze your projects for the best of solutions so as
                 to significantly improve your business
               </p>
             </Col>
@@ -57,7 +61,11 @@ class Homepage extends Component {
                   xs={12}
                   className="serviceMainBox"
                 >
-                  <div className="serviceSubBox">
+                  <div
+                    data-aos="fade-down-right"
+                    data-aos-duration="1000"
+                    className="serviceSubBox"
+                  >
                     <div>
                       <FaMobileAlt className="mobileIcon" />
                     </div>
@@ -97,7 +105,11 @@ class Homepage extends Component {
                   xs={12}
                   className="serviceMainBox"
                 >
-                  <div className="serviceSubBox">
+                  <div
+                    data-aos="fade-down-left"
+                    data-aos-duration="1000"
+                    className="serviceSubBox"
+                  >
                     <div>
                       <HiCode className="softwareEngIcon" />
                     </div>
@@ -137,7 +149,7 @@ class Homepage extends Component {
                     xs={12}
                     className="phoneOneMainContainer-reachUs"
                   >
-                    <div>
+                    <div data-aos="zoom-in" data-aos-duration="2000">
                       <Button className="reachUsButton-phoneOne">
                         <a
                           href="tel:+233 546 835 848 "
@@ -158,10 +170,11 @@ class Homepage extends Component {
                     xs={12}
                     className="phoneOneMainContainer-reachUs"
                   >
-                    <div>
+                    <div data-aos="zoom-in-down">
                       <Button className="reachUsButton-phoneTwo">
                         <a
                           href="tel:+233 248 206 239 "
+                          target="_blank"
                           className="phone2Link-reachUs"
                         >
                           <ImPhone className="icons-reachUs" />
@@ -179,10 +192,11 @@ class Homepage extends Component {
                     xs={12}
                     className="phoneOneMainContainer-reachUs"
                   >
-                    <div>
+                    <div data-aos="zoom-out-right" data-aos-duration="2000">
                       <Button className="reachUsButton-whatsapp">
                         <a
                           className="whatsappLink-reachUs"
+                          target="_blank"
                           href="https://wa.me/+233262753277"
                         >
                           <FaWhatsapp className="icons-reachUs" /> +233 262 753
@@ -251,7 +265,11 @@ class Homepage extends Component {
                   </Col>
                 </Row>
                 <Row className="viewMoreButtonContainer">
-                  <button className="viewMoreButton">view more</button>
+                  <button className="viewMoreButton">
+                    <Link to="/projects" className="viewMoreButtonLink">
+                      view more
+                    </Link>
+                  </button>
                 </Row>
               </Col>
             </Row>
@@ -283,7 +301,7 @@ class Homepage extends Component {
                             </Form.Label>
                             <Form.Control
                               type="text"
-                              className="quotesFormsControl"
+                              className="quotesFormsControl getQuoteInputStyle"
                             />
                           </Col>
 
@@ -293,7 +311,7 @@ class Homepage extends Component {
                             </Form.Label>
                             <Form.Control
                               type="text"
-                              className="quotesFormsControl"
+                              className="quotesFormsControl getQuoteInputStyle"
                             />
                           </Col>
                         </Row>
@@ -307,7 +325,7 @@ class Homepage extends Component {
                             </Form.Label>
                             <Form.Control
                               type="tel"
-                              className="quotesFormsControl"
+                              className="quotesFormsControl getQuoteInputStyle"
                             />
                           </Col>
                           <Col xxl={6} xl={6} lg={6} md={12} sm={12} xs={12}>
@@ -316,7 +334,7 @@ class Homepage extends Component {
                             </Form.Label>
                             <Form.Control
                               type="email"
-                              className="quotesFormsControl"
+                              className="quotesFormsControl getQuoteInputStyle"
                             />
                           </Col>
                         </Row>
@@ -326,33 +344,11 @@ class Homepage extends Component {
                         <Row>
                           <Col xxl={6} xl={6} lg={6} md={12} sm={12} xs={12}>
                             <Form.Label className="quotesFormLabelText">
-                              First name
-                            </Form.Label>
-                            <Form.Control
-                              type="text"
-                              className="quotesFormsControl"
-                            />
-                          </Col>
-                          <Col xxl={6} xl={6} lg={6} md={12} sm={12} xs={12}>
-                            <Form.Label className="quotesFormLabelText">
-                              Last name
-                            </Form.Label>
-                            <Form.Control
-                              type="text"
-                              className="quotesFormsControl"
-                            />
-                          </Col>
-                        </Row>
-                      </Form.Group>
-                      <Form.Group as={Col}>
-                        <Row>
-                          <Col xxl={6} xl={6} lg={6} md={12} sm={12} xs={12}>
-                            <Form.Label className="quotesFormLabelText">
                               Company
                             </Form.Label>
                             <Form.Control
                               type="text"
-                              className="quotesFormsControl"
+                              className="quotesFormsControl getQuoteInputStyle"
                             />
                           </Col>
                           <Col xxl={6} xl={6} lg={6} md={12} sm={12} xs={12}>
@@ -361,7 +357,7 @@ class Homepage extends Component {
                             </Form.Label>
                             <Form.Select
                               aria-label="Default select example"
-                              className="quotesFormsControl"
+                              className="quotesFormsControl getQuoteInputStyle"
                             >
                               <option value="Mobile Apps">Mobile Apps</option>
                               <option value="Website">Website</option>
@@ -378,7 +374,11 @@ class Homepage extends Component {
                         <Form.Label className="quotesFormLabelText">
                           Project Description
                         </Form.Label>
-                        <Form.Control as="textarea" rows={5} />
+                        <Form.Control
+                          as="textarea"
+                          rows={5}
+                          className="getQuoteInputStyle"
+                        />
                       </Form.Group>
                       <InputGroup>
                         <Button>Submit</Button>
