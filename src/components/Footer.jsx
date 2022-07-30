@@ -66,7 +66,7 @@ class Footer extends Component {
                     </a>
                   </li>
                   <li>
-                    <a className="menuLink-footer" href="projects">
+                    <a className="menuLink-footer" href="/projects">
                       Projects
                     </a>
                   </li>
@@ -123,14 +123,20 @@ class Footer extends Component {
                 <h3 className="footerHeaderText">Follow us</h3>
                 <div className="socialMediaLinkMainContainer-footer">
                   <div className="facebookLinkConainer-footer">
-                    <a href="https://www.facebook.com/search/top?q=flosa%20technologies" target="_blank"
-                    rel="noreferrer">
+                    <a
+                      href="https://www.facebook.com/search/top?q=flosa%20technologies"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
                       <BsFacebook className="facebookIcon-footer" />
                     </a>
                   </div>
                   <div className="instagramLinkContainer-footer">
-                    <a href="https://www.instagram.com/flosatech/"  target="_blank"
-                    rel="noreferrer">
+                    <a
+                      href="https://www.instagram.com/flosatech/"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
                       <FaInstagram className="instagramIcon-footer" />
                     </a>
                   </div>

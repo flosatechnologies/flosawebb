@@ -3,10 +3,9 @@ import "../css/Contact.css";
 import contactImage from "../images/contact.jpg";
 import { Row, Col, Container } from "react-bootstrap";
 import { Telephone } from "react-bootstrap-icons";
-import { FaWhatsapp, FaEnvelope } from "react-icons/fa";
-import { BsFillTelephoneFill, BsFacebook } from "react-icons/bs";
-import { FaInstagram } from "react-icons/fa";
-import { HiOutlineMail } from "react-icons/hi";
+import { FaWhatsapp, FaEnvelope, FaInstagram } from "react-icons/fa";
+import { BsFacebook } from "react-icons/bs";
+
 import emailjs from "emailjs-com";
 
 const Contact = () => {
@@ -74,9 +73,12 @@ const Contact = () => {
                 >
                   <input
                     style={{
-                      marginRight: "10px",
                       marginTop: "20px",
+                      marginRight: "15px",
                       width: "50%",
+                      fontFamily: "sans-serif",
+                      fontSize: "20px",
+                      color: "black",
                     }}
                     type="text"
                     placeholder="First Name"
@@ -85,9 +87,12 @@ const Contact = () => {
 
                   <input
                     style={{
-                      marginRight: "10px",
                       marginTop: "20px",
+                      marginLeft: "15px",
                       width: "50%",
+                      fontFamily: "sans-serif",
+                      fontSize: "20px",
+                      color: "black",
                     }}
                     type="text"
                     placeholder="Last Name"
@@ -96,17 +101,35 @@ const Contact = () => {
                 </div>
                 <div
                   className="col"
-                  style={{ display: "flex", marginBottom: "10px" }}
+                  style={{
+                    display: "flex",
+                    marginBottom: "10px",
+                    fontFamily: "sans-serif",
+                    fontSize: "20px",
+                    color: "black",
+                  }}
                 >
                   <input
-                    style={{ marginRight: "10px", width: "50%" }}
+                    style={{
+                      marginRight: "15px",
+                      width: "50%",
+                      fontFamily: "sans-serif",
+                      fontSize: "20px",
+                      color: "black",
+                    }}
                     type="text"
                     placeholder="Phone"
                     name="user_phone"
                   />
 
                   <input
-                    style={{ marginRight: "10px", width: "50%" }}
+                    style={{
+                      marginLeft: "15px",
+                      width: "50%",
+                      fontFamily: "sans-serif",
+                      fontSize: "20px",
+                      color: "black",
+                    }}
                     type="text"
                     placeholder="Email"
                     name="user_email"
@@ -114,68 +137,141 @@ const Contact = () => {
                 </div>
                 <div className="col-md">
                   <textarea
-                    style={{ width: "50%" }}
+                    style={{
+                      width: "100%",
+                      fontFamily: "sans-serif",
+                      fontSize: "20px",
+                      color: "black",
+                    }}
                     type="text"
                     placeholder="Message"
                     name="message"
+                    rows={7}
                   />
                 </div>
                 <div>
-                  <input type="submit" value="Submit" />
+                  <input
+                    type="submit"
+                    value="Submit"
+                    style={{
+                      backgroundColor: "rgb(71, 162, 252)",
+                      width: "25%",
+                      color: "black",
+                      borderStyle: "none",
+                      borderRadius: "5px",
+                      fontFamily: "sans-serif",
+                      fontWeight: "bold",
+                      fontSize: "20px",
+                      padding: "4px 5px",
+                    }}
+                  />
                 </div>
               </form>
             </Col>
-            <Col xs={12} sm={12} md={5} lg={5} xl={5} xxl={5} style={{}}>
+            <Col
+              xs={12}
+              sm={12}
+              md={5}
+              lg={5}
+              xl={5}
+              xxl={5}
+              style={{ paddingLeft: "40px" }}
+            >
               <h2 className="contactInfoText-contact">Contact Information</h2>
               <div className="icons">
                 <h5>
-                  <a>
+                  <a className="phoneContact1" href="tel: +233 546 835 848">
                     <Telephone
                       id="tele"
-                      color="blue"
+                      color="rgb(71, 162, 252)"
                       size={20}
                       paddingTop={5}
-                      marginRight={20}
+                      style={{
+                        marginRight: "10px",
+                      }}
                     />
                     0546835848
                   </a>
                 </h5>
                 <h5>
-                  <a href="tel: +233 546 835 848">
+                  <a className="phoneContact2" href="tel: +233 248 206 239">
                     <Telephone
                       id="tele"
-                      color="blue"
+                      color="rgb(71, 162, 252)"
                       size={20}
                       paddingTop={5}
-                      marginRight={20}
+                      style={{ marginRight: "10px" }}
                     />
-                    0546835848
+                    0248206239
                   </a>
                 </h5>
                 <h5 style={{ paddingLeft: "5px" }}>
-                  <a>
+                  <a
+                    className=" phoneWhatsapp"
+                    href="https://wa.me/+233262753277"
+                  >
                     <FaWhatsapp
                       id="tele"
-                      color="green"
-                      size={20}
+                      color="rgb(71, 162, 252)"
+                      size={19}
                       paddingTop={5}
-                      marginRight={20}
+                      style={{ marginRight: "10px" }}
                     />
-                    0546835848
+                    0262753277
                   </a>
                 </h5>
                 <h5>
-                  <a>
+                  <a
+                    className="emailLinkContact"
+                    href="mailto:info@flosatechnologies.com"
+                  >
                     <FaEnvelope
                       id="tele"
-                      color="lightblue"
+                      color="rgb(71, 162, 252)"
                       size={20}
                       paddingTop={5}
-                      marginLeft={30}
+                      style={{ marginRight: "10px" }}
                     />
                     info@flosatechnologies.com
                   </a>
                 </h5>
+              </div>
+              <div>
+                <div style={{ marginTop: "8%" }}>
+                  <h2 className="followUsInfoText-contact">Follow us on</h2>
+                </div>
+                <div style={{ display: "flex", flexDirection: "row" }}>
+                  <div className="facebookLinkContainer-contactPage">
+                    <a
+                      href="https://www.facebook.com/search/top?q=flosa%20technologies"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      <BsFacebook
+                        style={{
+                          color: "black",
+                          fontSize: "30px",
+                        }}
+                        className="facebookIcon-contactPage"
+                      />
+                    </a>
+                  </div>
+                  <div className="instagramLinkContainer-contactPage">
+                    <a
+                      href="https://www.instagram.com/flosatech/"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      <FaInstagram
+                        style={{
+                          color: "black",
+                          fontSize: "30px",
+                        }}
+                        className="instagramIcon-contactPage"
+                      />
+                    </a>
+                  </div>
+                </div>
               </div>
             </Col>
           </Row>
