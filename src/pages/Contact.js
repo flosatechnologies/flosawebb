@@ -3,10 +3,9 @@ import "../css/Contact.css";
 import contactImage from "../images/contact.jpg";
 import { Row, Col, Container } from "react-bootstrap";
 import { Telephone } from "react-bootstrap-icons";
-import { FaWhatsapp, FaEnvelope } from "react-icons/fa";
-import { BsFillTelephoneFill, BsFacebook } from "react-icons/bs";
-import { FaInstagram } from "react-icons/fa";
-import { HiOutlineMail } from "react-icons/hi";
+import { FaWhatsapp, FaEnvelope, FaInstagram } from "react-icons/fa";
+import { BsFacebook } from "react-icons/bs";
+
 import emailjs from "emailjs-com";
 
 const Contact = () => {
@@ -151,7 +150,21 @@ const Contact = () => {
                   />
                 </div>
                 <div>
-                  <input type="submit" value="Submit" />
+                  <input
+                    type="submit"
+                    value="Submit"
+                    style={{
+                      backgroundColor: "rgb(71, 162, 252)",
+                      width: "25%",
+                      color: "black",
+                      borderStyle: "none",
+                      borderRadius: "5px",
+                      fontFamily: "sans-serif",
+                      fontWeight: "bold",
+                      fontSize: "20px",
+                      padding: "4px 5px",
+                    }}
+                  />
                 </div>
               </form>
             </Col>
@@ -222,6 +235,43 @@ const Contact = () => {
                     info@flosatechnologies.com
                   </a>
                 </h5>
+              </div>
+              <div>
+                <div style={{ marginTop: "8%" }}>
+                  <h2 className="followUsInfoText-contact">Follow us on</h2>
+                </div>
+                <div style={{ display: "flex", flexDirection: "row" }}>
+                  <div className="facebookLinkContainer-contactPage">
+                    <a
+                      href="https://www.facebook.com/search/top?q=flosa%20technologies"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      <BsFacebook
+                        style={{
+                          color: "black",
+                          fontSize: "30px",
+                        }}
+                        className="facebookIcon-contactPage"
+                      />
+                    </a>
+                  </div>
+                  <div className="instagramLinkContainer-contactPage">
+                    <a
+                      href="https://www.instagram.com/flosatech/"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      <FaInstagram
+                        style={{
+                          color: "black",
+                          fontSize: "30px",
+                        }}
+                        className="instagramIcon-contactPage"
+                      />
+                    </a>
+                  </div>
+                </div>
               </div>
             </Col>
           </Row>

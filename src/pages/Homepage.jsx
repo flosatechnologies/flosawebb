@@ -14,6 +14,7 @@ import Button from "react-bootstrap/Button";
 import InputGroup from "react-bootstrap/InputGroup";
 import Aos from "aos";
 import "aos/dist/aos.css";
+import { Link } from "react-router-dom";
 
 class Homepage extends Component {
   render() {
@@ -265,9 +266,9 @@ class Homepage extends Component {
                 </Row>
                 <Row className="viewMoreButtonContainer">
                   <button className="viewMoreButton">
-                    <a href="#" className="viewMoreButtonLink">
+                    <Link to="/projects" className="viewMoreButtonLink">
                       view more
-                    </a>
+                    </Link>
                   </button>
                 </Row>
               </Col>
@@ -300,7 +301,7 @@ class Homepage extends Component {
                             </Form.Label>
                             <Form.Control
                               type="text"
-                              className="quotesFormsControl"
+                              className="quotesFormsControl getQuoteInputStyle"
                             />
                           </Col>
 
@@ -310,7 +311,7 @@ class Homepage extends Component {
                             </Form.Label>
                             <Form.Control
                               type="text"
-                              className="quotesFormsControl"
+                              className="quotesFormsControl getQuoteInputStyle"
                             />
                           </Col>
                         </Row>
@@ -324,7 +325,7 @@ class Homepage extends Component {
                             </Form.Label>
                             <Form.Control
                               type="tel"
-                              className="quotesFormsControl"
+                              className="quotesFormsControl getQuoteInputStyle"
                             />
                           </Col>
                           <Col xxl={6} xl={6} lg={6} md={12} sm={12} xs={12}>
@@ -333,7 +334,7 @@ class Homepage extends Component {
                             </Form.Label>
                             <Form.Control
                               type="email"
-                              className="quotesFormsControl"
+                              className="quotesFormsControl getQuoteInputStyle"
                             />
                           </Col>
                         </Row>
@@ -347,7 +348,7 @@ class Homepage extends Component {
                             </Form.Label>
                             <Form.Control
                               type="text"
-                              className="quotesFormsControl"
+                              className="quotesFormsControl getQuoteInputStyle"
                             />
                           </Col>
                           <Col xxl={6} xl={6} lg={6} md={12} sm={12} xs={12}>
@@ -356,7 +357,7 @@ class Homepage extends Component {
                             </Form.Label>
                             <Form.Select
                               aria-label="Default select example"
-                              className="quotesFormsControl"
+                              className="quotesFormsControl getQuoteInputStyle"
                             >
                               <option value="Mobile Apps">Mobile Apps</option>
                               <option value="Website">Website</option>
@@ -373,7 +374,11 @@ class Homepage extends Component {
                         <Form.Label className="quotesFormLabelText">
                           Project Description
                         </Form.Label>
-                        <Form.Control as="textarea" rows={5} />
+                        <Form.Control
+                          as="textarea"
+                          rows={5}
+                          className="getQuoteInputStyle"
+                        />
                       </Form.Group>
                       <InputGroup>
                         <Button>Submit</Button>

@@ -61,6 +61,12 @@
   /* text-align: center; */
 }
 
+.followUsInfoText-contact {
+  font-family: sans-serif;
+  font-size: 30px;
+  color: rgb(71, 162, 252);
+  font-weight: 600;
+}
 .phoneContact2,
 .phoneContact1,
 .emailLinkContact,
@@ -68,4 +74,8 @@
   color: black;
   text-decoration: none;
   margin-left: 5px;
+}
+
+.facebookLinkContainer-contactPage {
+  margin-right: 15px;
 }
